@@ -1,3 +1,7 @@
+from pydantic import validate_call
+
+
+
 def create_user(first_name:str, last_name:str, age:int) -> dict:
     email = f"{first_name.lower()}_{last_name.lower()}@example.com"
 
