@@ -1,7 +1,7 @@
 from pydantic import validate_call
 
 
-
+@validate_call
 def create_user(first_name:str, last_name:str, age:int) -> dict:
     email = f"{first_name.lower()}_{last_name.lower()}@example.com"
 
@@ -14,5 +14,5 @@ def create_user(first_name:str, last_name:str, age:int) -> dict:
     }
 
 
-user1 = create_user("Somrat","Sheikh","thirty-eight")
+user1 = create_user("Somrat","Sheikh", "thirty-eight")
 print(user1)
