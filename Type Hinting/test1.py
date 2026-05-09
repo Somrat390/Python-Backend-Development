@@ -14,5 +14,5 @@ def create_user(first_name:str, last_name:str, age:int) -> dict:
     }
 
 
-user1 = create_user("Somrat","Sheikh", "thirty-eight")
+user1 = create_user("Somrat","Sheikh", 38)
 print(user1)
